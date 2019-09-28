@@ -1,0 +1,29 @@
+vecstack log [2019.05.02].[05.04.22].311673.3f8236
+
+task:         [classification]
+n_classes:    [2]
+metric:       [log_loss]
+mode:         [oof_pred]
+n_models:     [1]
+
+----------------------------------------
+model  0:     [KerasClassifier]
+----------------------------------------
+
+batch_size 32
+build_fn   <function build_keras_model_2 at 0x0000020E53E3BD90>
+epochs     5
+verbose    0
+
+    fold  0:  [13.31120924]
+    fold  1:  [21.22756716]
+    fold  2:  [21.21625772]
+    fold  3:  [21.21625772]
+    fold  4:  [13.30447764]
+    ----
+    MEAN:     [18.05515389] + [3.87616554]
+    FULL:     [18.05569401]
+
+----------------------------------------
+END
+----------------------------------------

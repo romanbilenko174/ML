@@ -1,0 +1,186 @@
+vecstack log [2019.05.02].[02.42.57].305494.c4aa2f
+
+task:         [classification]
+n_classes:    [2]
+metric:       [log_loss]
+mode:         [oof_pred]
+n_models:     [6]
+
+----------------------------------------
+model  0:     [GaussianNB]
+----------------------------------------
+
+priors        None
+var_smoothing 1e-09
+
+    fold  0:  [2.98547672]
+    fold  1:  [2.40356369]
+    fold  2:  [2.70518159]
+    fold  3:  [3.25859307]
+    fold  4:  [2.69388274]
+    ----
+    MEAN:     [2.80933956] + [0.29040876]
+    FULL:     [2.80932017]
+
+----------------------------------------
+model  1:     [LogisticRegression]
+----------------------------------------
+
+C                 1.0
+class_weight      None
+dual              False
+fit_intercept     True
+intercept_scaling 1
+max_iter          100
+multi_class       warn
+n_jobs            None
+penalty           l2
+random_state      0
+solver            warn
+tol               0.0001
+verbose           0
+warm_start        False
+
+    fold  0:  [0.56709169]
+    fold  1:  [0.54507831]
+    fold  2:  [0.54054232]
+    fold  3:  [0.57288150]
+    fold  4:  [0.55506776]
+    ----
+    MEAN:     [0.55613232] + [0.01238560]
+    FULL:     [0.55613248]
+
+----------------------------------------
+model  2:     [ExtraTreesClassifier]
+----------------------------------------
+
+bootstrap                False
+class_weight             None
+criterion                gini
+max_depth                3
+max_features             auto
+max_leaf_nodes           None
+min_impurity_decrease    0.0
+min_impurity_split       None
+min_samples_leaf         1
+min_samples_split        2
+min_weight_fraction_leaf 0.0
+n_estimators             100
+n_jobs                   -1
+oob_score                False
+random_state             0
+verbose                  0
+warm_start               False
+
+    fold  0:  [0.59070503]
+    fold  1:  [0.58459991]
+    fold  2:  [0.58282023]
+    fold  3:  [0.58977133]
+    fold  4:  [0.58643745]
+    ----
+    MEAN:     [0.58686679] + [0.00299554]
+    FULL:     [0.58686713]
+
+----------------------------------------
+model  3:     [RandomForestClassifier]
+----------------------------------------
+
+bootstrap                True
+class_weight             None
+criterion                gini
+max_depth                3
+max_features             auto
+max_leaf_nodes           None
+min_impurity_decrease    0.0
+min_impurity_split       None
+min_samples_leaf         1
+min_samples_split        2
+min_weight_fraction_leaf 0.0
+n_estimators             100
+n_jobs                   -1
+oob_score                False
+random_state             0
+verbose                  0
+warm_start               False
+
+    fold  0:  [0.58047575]
+    fold  1:  [0.55036330]
+    fold  2:  [0.55124458]
+    fold  3:  [0.57494172]
+    fold  4:  [0.56182035]
+    ----
+    MEAN:     [0.56376914] + [0.01220095]
+    FULL:     [0.56377003]
+
+----------------------------------------
+model  4:     [XGBClassifier]
+----------------------------------------
+
+base_score        0.5
+booster           gbtree
+colsample_bylevel 1
+colsample_bytree  1
+gamma             0
+learning_rate     0.1
+max_delta_step    0
+max_depth         3
+min_child_weight  1
+missing           None
+n_estimators      100
+n_jobs            -1
+nthread           None
+objective         binary:logistic
+random_state      0
+reg_alpha         0
+reg_lambda        1
+scale_pos_weight  1
+seed              None
+silent            True
+subsample         1
+
+    fold  0:  [0.57627173]
+    fold  1:  [0.54513547]
+    fold  2:  [0.54820242]
+    fold  3:  [0.58036226]
+    fold  4:  [0.55539342]
+    ----
+    MEAN:     [0.56107306] + [0.01452578]
+    FULL:     [0.56107390]
+
+----------------------------------------
+model  5:     [LGBMClassifier]
+----------------------------------------
+
+boosting_type     gbdt
+class_weight      None
+colsample_bytree  1.0
+importance_type   split
+learning_rate     0.1
+max_depth         3
+min_child_samples 20
+min_child_weight  0.001
+min_split_gain    0.0
+n_estimators      100
+n_jobs            -1
+num_leaves        31
+objective         None
+random_state      0
+reg_alpha         0.0
+reg_lambda        0.0
+silent            True
+subsample         1.0
+subsample_for_bin 200000
+subsample_freq    0
+
+    fold  0:  [0.57572366]
+    fold  1:  [0.54608651]
+    fold  2:  [0.54844377]
+    fold  3:  [0.57934057]
+    fold  4:  [0.55530793]
+    ----
+    MEAN:     [0.56098049] + [0.01389699]
+    FULL:     [0.56098143]
+
+----------------------------------------
+END
+----------------------------------------
